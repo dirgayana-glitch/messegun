@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MASSAGE GUN PRO — Hilangkan Pegal & Nyeri Otot Dalam 3 Menit!</title>
+<meta name="description" content="Massage Gun Pro - Alat pijat elektrik terapi otot. Redakan pegal, nyeri, dan otot tegang dalam hitungan menit. PROMO HARI INI + GRATIS ONGKIR + COD!" />
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Tahoma,sans-serif}
+  body{background:#fff;color:#222;line-height:1.5;overflow-x:hidden}
+  img{max-width:100%;display:block}
+
+  /* TOP BAR */
+  .topbar{background:linear-gradient(90deg,#d40000,#ff5722);color:#fff;text-align:center;padding:10px;font-weight:700;font-size:14px;position:sticky;top:0;z-index:999;animation:flash 1.2s infinite}
+  @keyframes flash{0%,100%{background:linear-gradient(90deg,#d40000,#ff5722)}50%{background:linear-gradient(90deg,#ff5722,#d40000)}}
+
+  /* HERO */
+  .hero{background:linear-gradient(135deg,#1a1a1a,#3a0000);color:#fff;padding:30px 20px;text-align:center}
+  .hero .badge{display:inline-block;background:#ffd700;color:#000;padding:6px 14px;border-radius:30px;font-weight:800;font-size:13px;margin-bottom:12px;animation:bounce 1.5s infinite}
+  @keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+  .hero h1{font-size:30px;line-height:1.2;margin-bottom:12px;text-shadow:2px 2px 8px rgba(255,87,34,.5)}
+  .hero h1 span{color:#ffd700;display:block;font-size:34px}
+  .hero p.sub{font-size:15px;margin-bottom:18px;color:#ffd1b3}
+  .hero img.product{max-width:340px;margin:18px auto;border-radius:20px;box-shadow:0 10px 40px rgba(255,87,34,.5);animation:float 3s ease-in-out infinite}
+  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+  .stars{font-size:22px;color:#ffd700;margin:8px 0}
+  .sold{color:#ffd1b3;font-size:14px}
+
+  /* CTA BUTTON */
+  .btn-cta{display:inline-block;background:linear-gradient(180deg,#25D366,#128C7E);color:#fff;font-weight:800;padding:18px 30px;border-radius:50px;text-decoration:none;font-size:18px;box-shadow:0 8px 25px rgba(37,211,102,.6);margin:15px 0;border:none;cursor:pointer;animation:pulse 1.5s infinite;text-transform:uppercase}
+  @keyframes pulse{0%,100%{transform:scale(1);box-shadow:0 8px 25px rgba(37,211,102,.6)}50%{transform:scale(1.05);box-shadow:0 12px 35px rgba(37,211,102,.9)}}
+
+  /* SECTION */
+  .section{padding:40px 20px;max-width:600px;margin:0 auto}
+  .section h2{text-align:center;font-size:24px;color:#d40000;margin-bottom:20px;line-height:1.3}
+  .section h2 span{color:#ff5722}
+
+  /* PAIN POINTS */
+  .pain{background:#fff5f5;border:2px dashed #d40000;border-radius:12px;padding:20px;margin:20px 0}
+  .pain ul{list-style:none}
+  .pain li{padding:8px 0 8px 30px;position:relative;font-size:15px}
+  .pain li::before{content:"❌";position:absolute;left:0;top:8px}
+
+  /* BENEFIT */
+  .benefit{background:#f0fff4;border:2px solid #25D366;border-radius:12px;padding:20px;margin:20px 0}
+  .benefit ul{list-style:none}
+  .benefit li{padding:8px 0 8px 30px;position:relative;font-size:15px;font-weight:600}
+  .benefit li::before{content:"✅";position:absolute;left:0;top:8px}
+
+  /* GALLERY */
+  .gallery{display:flex;flex-direction:column;gap:15px;margin:20px 0}
+  .gallery img{width:100%;border-radius:12px;border:3px solid #ff5722;box-shadow:0 5px 15px rgba(0,0,0,.15)}
+
+  /* FEATURES BOX */
+  .feat-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:20px 0}
+  .feat-box{background:#fff;border:2px solid #ffd700;border-radius:12px;padding:15px;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,.08)}
+  .feat-box .ic{font-size:32px;margin-bottom:5px}
+  .feat-box h4{color:#d40000;font-size:14px;margin-bottom:5px}
+  .feat-box p{font-size:12px;color:#555}
+
+  /* PRICING */
+  .price-section{background:linear-gradient(135deg,#fff8e1,#fff);padding:40px 20px;text-align:center}
+  .strike{text-decoration:line-through;color:#888;font-size:18px}
+  .promo-tag{display:inline-block;background:#d40000;color:#fff;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:800;margin-bottom:8px;animation:flash 1s infinite}
+  .price-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:500px;margin:20px auto}
+  .price-card{background:#fff;border:3px solid #ff5722;border-radius:15px;padding:18px 12px;position:relative;box-shadow:0 6px 20px rgba(255,87,34,.2);transition:transform .2s}
+  .price-card:hover{transform:translateY(-5px)}
+  .price-card.best{border-color:#ffd700;background:linear-gradient(180deg,#fffbe6,#fff);transform:scale(1.05)}
+  .price-card .lbl{background:#ffd700;color:#000;font-size:10px;font-weight:800;padding:3px 8px;border-radius:10px;position:absolute;top:-10px;left:50%;transform:translateX(-50%);white-space:nowrap}
+  .price-card.best .lbl{background:#d40000;color:#fff}
+  .price-card h3{color:#333;font-size:16px;margin-bottom:8px}
+  .price-card .now{font-size:22px;font-weight:800;color:#d40000}
+  .price-card .was{font-size:13px;color:#888;text-decoration:line-through}
+  .price-card .save{font-size:11px;color:#25D366;font-weight:700;margin-top:4px}
+  .price-card button{margin-top:10px;background:#ff5722;color:#fff;border:none;padding:10px;border-radius:25px;font-weight:700;width:100%;cursor:pointer;font-size:13px}
+
+  /* COUNTDOWN */
+  .countdown-box{background:#1a1a1a;color:#fff;padding:20px;border-radius:15px;text-align:center;margin:20px auto;max-width:500px}
+  .countdown-box p{font-size:14px;margin-bottom:10px;color:#ffd700;font-weight:700}
+  .timer{display:flex;justify-content:center;gap:8px}
+  .timer div{background:#d40000;padding:10px 14px;border-radius:8px;min-width:60px}
+  .timer span{display:block;font-size:24px;font-weight:800}
+  .timer small{font-size:10px;text-transform:uppercase}
+
+  /* TESTIMONIAL */
+  .testi{background:#f9f9f9;padding:40px 20px}
+  .testi-card{background:#fff;border-radius:12px;padding:18px;margin:12px auto;max-width:500px;box-shadow:0 4px 12px rgba(0,0,0,.08);border-left:5px solid #25D366}
+  .testi-card .stars{color:#ffd700;font-size:16px}
+  .testi-card .name{font-weight:700;color:#333;margin-top:8px;font-size:14px}
+  .testi-card .text{font-size:14px;color:#555;margin:8px 0;font-style:italic}
+  .verified{color:#25D366;font-size:11px;font-weight:600}
+
+  /* GUARANTEE */
+  .guarantee{background:linear-gradient(135deg,#25D366,#128C7E);color:#fff;padding:30px 20px;text-align:center;margin-top:20px;border-radius:15px}
+  .guarantee .ic{font-size:60px;margin-bottom:10px}
+  .guarantee h3{font-size:22px;margin-bottom:10px}
+
+  /* FORM */
+  .order-form{background:#fff;padding:25px;border-radius:15px;max-width:500px;margin:20px auto;box-shadow:0 10px 30px rgba(0,0,0,.15);border:3px solid #ffd700}
+  .order-form h3{text-align:center;color:#d40000;margin-bottom:15px;font-size:20px}
+  .order-form input,.order-form select,.order-form textarea{width:100%;padding:12px;margin:6px 0;border:2px solid #ddd;border-radius:8px;font-size:14px}
+  .order-form button{width:100%;background:linear-gradient(180deg,#ff5722,#d40000);color:#fff;font-weight:800;padding:15px;border-radius:50px;border:none;font-size:16px;margin-top:10px;cursor:pointer;text-transform:uppercase;box-shadow:0 6px 18px rgba(212,0,0,.5)}
+
+  /* FLOAT WA */
+  .float-wa{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:32px;box-shadow:0 6px 20px rgba(37,211,102,.6);text-decoration:none;z-index:998;animation:pulse 1.5s infinite}
+
+  /* SOCIAL PROOF NOTIF */
+  .notif{position:fixed;bottom:20px;left:20px;background:#fff;border-radius:12px;padding:12px 16px;box-shadow:0 10px 30px rgba(0,0,0,.2);max-width:280px;display:flex;align-items:center;gap:10px;z-index:997;transform:translateX(-400px);transition:transform .5s ease;border-left:4px solid #25D366}
+  .notif.show{transform:translateX(0)}
+  .notif .avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#ff5722,#d40000);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:18px;flex-shrink:0}
+  .notif .info{flex:1;font-size:12px}
+  .notif .info b{color:#222;display:block;font-size:13px}
+  .notif .info span{color:#666}
+  .notif .info small{color:#999;font-size:10px}
+  .notif .check{color:#25D366;font-size:18px}
+
+  /* STOCK BAR */
+  .stock{background:#fff3cd;border:2px solid #ff5722;border-radius:10px;padding:15px;margin:15px auto;max-width:500px;text-align:center}
+  .stock p{font-weight:700;color:#d40000;font-size:14px;margin-bottom:8px}
+  .bar{background:#eee;height:14px;border-radius:7px;overflow:hidden}
+  .bar div{background:linear-gradient(90deg,#d40000,#ff5722);height:100%;width:18%;animation:shrink 4s ease forwards}
+  @keyframes shrink{from{width:80%}to{width:18%}}
+
+  /* FAQ */
+  .faq{padding:30px 20px;max-width:600px;margin:0 auto}
+  .faq-item{background:#fff;border:1px solid #eee;border-radius:10px;margin:10px 0;padding:15px;box-shadow:0 2px 8px rgba(0,0,0,.05)}
+  .faq-item h4{color:#d40000;font-size:15px;margin-bottom:8px}
+  .faq-item p{font-size:14px;color:#555}
+
+  /* FOOTER */
+  footer{background:#1a1a1a;color:#aaa;text-align:center;padding:25px 20px;font-size:12px}
+
+  @media(min-width:768px){
+    .hero h1{font-size:42px}
+    .hero h1 span{font-size:48px}
+    .section h2{font-size:30px}
+  }
+</style>
+</head>
+<body>
+
+<!-- TOP NOTIF -->
+<div class="topbar">🔥 PROMO HARI INI BERAKHIR DALAM 24 JAM! GRATIS ONGKIR + COD 🔥</div>
+
+<!-- HERO -->
+<section class="hero">
+  <span class="badge">⚡ BEST SELLER #1 INDONESIA ⚡</span>
+  <h1>STOP PEGAL & NYERI OTOT!<span>MASSAGE GUN PRO</span></h1>
+  <p class="sub">Pijat Profesional Setara Terapis di Rumah — Hanya 3 Menit Pegal Hilang!</p>
+  <div class="stars">⭐⭐⭐⭐⭐ <span style="font-size:14px">(4.9/5 dari 12.847 Pembeli)</span></div>
+  <img class="product" src="https://cdn.scalev.id/uploads/1768364243/vjZJHTkAMkCXeM1PKk8jEA/1768364245530-imgi_4_id-11134207-7r98q-lvq2gic0qyll2a.webp" alt="Massage Gun Pro" />
+  <p class="sold">🛒 Terjual <b>10.000+</b> unit | ✅ COD Seluruh Indonesia | 🚚 Gratis Ongkir</p>
+  <a href="#order" class="btn-cta">👉 PESAN SEKARANG - DISKON 50%</a>
+</section>
+
+<!-- PAIN POINTS -->
+<section class="section">
+  <h2>Apakah Anda Sering <span>Mengalami Ini?</span></h2>
+  <div class="pain">
+    <ul>
+      <li>Pegal & kaku di leher, bahu, pinggang setelah kerja</li>
+      <li>Otot tegang & nyeri setelah olahraga</li>
+      <li>Susah tidur karena badan capek tak hilang-hilang</li>
+      <li>Mahal & ribet harus pergi ke tukang pijat tiap minggu</li>
+      <li>Pijat suami/istri tidak maksimal bikin tangan capek</li>
+    </ul>
+  </div>
+  <p style="text-align:center;font-size:18px;font-weight:700;color:#d40000;margin-top:15px">SAATNYA PUNYA SOLUSI SENDIRI DI RUMAH! 💪</p>
+</section>
+
+<!-- BENEFIT -->
+<section class="section">
+  <h2>Kenapa <span>MASSAGE GUN PRO?</span></h2>
+  <img src="https://cdn.scalev.id/uploads/1761721959/i9e2TB_Wv5zR-Eo0Hi75Qw/images_6798681760527565495.gif" style="border-radius:15px;margin:0 auto;max-width:400px" />
+  <div class="benefit">
+    <ul>
+      <li>Hilangkan PEGAL & NYERI hanya dalam 3 menit</li>
+      <li>Getaran kuat 3200 RPM setara terapis profesional</li>
+      <li>4 Mode kecepatan + 4 kepala pijat berbeda</li>
+      <li>Baterai 1200 mAh awet sampai 6 jam pemakaian</li>
+      <li>Ringan, portable, bisa dibawa kemanapun</li>
+      <li>Aman untuk semua usia & semua bagian tubuh</li>
+    </ul>
+  </div>
+</section>
+
+<!-- FEATURES GRID -->
+<section class="section">
+  <h2>Spesifikasi <span>UNGGULAN</span></h2>
+  <div class="feat-grid">
+    <div class="feat-box"><div class="ic">⚡</div><h4>3200 RPM</h4><p>Getaran kuat & dalam</p></div>
+    <div class="feat-box"><div class="ic">🔋</div><h4>1200 mAh</h4><p>Tahan 6 jam pakai</p></div>
+    <div class="feat-box"><div class="ic">🎯</div><h4>4 Kepala Pijat</h4><p>Sesuai area tubuh</p></div>
+    <div class="feat-box"><div class="ic">🔇</div><h4>Super Senyap</h4><p>Tidak bising</p></div>
+  </div>
+  <img src="https://cdn.scalev.id/uploads/1761721553/W8BRasbH0yimH8UFGQZF2g/imgi_6_CXLuCAJGv3XfCB6CXimb3ZMTLc2qTgRR2S8VdGw600KQ.gif" style="border-radius:15px;margin:15px auto;max-width:400px" />
+</section>
+
+<!-- GALLERY -->
+<section class="section">
+  <h2>Lihat <span>Produknya!</span></h2>
+  <div class="gallery">
+    <img src="https://cdn.scalev.id/uploads/1768364204/U6x2MwP3oecfFOT4QvnGbg/1768364206098-imgi_7_id-11134207-7r992-lvq2gic0sdiva6.webp" />
+    <img src="https://cdn.scalev.id/uploads/1768364192/uhGcRPb5FQTire5SWgpYiw/1768364193695-imgi_7_id-11134207-7rasc-m19b6nhrbiom6f.webp" />
+    <img src="https://cdn.scalev.id/uploads/1768364158/kRGtLYAqi10K608k4deDRg/1768364160845-imgi_7_id-11134207-7rasj-m1jaw55r6cf018.webp" />
+    <img src="https://cdn.scalev.id/uploads/1768364129/uRmFm83GhPBnrvLSHNCtqQ/1768364131304-imgi_8_id-11134207-7rasf-m1jaw55r4xuk56.webp" />
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="price-section">
+  <div class="promo-tag">🔥 FLASH SALE HARI INI 🔥</div>
+  <h2 style="color:#d40000;font-size:26px">PROMO SPESIAL — Diskon Hingga <span style="color:#ff5722">50%!</span></h2>
+  <p style="margin-top:10px"><span class="strike">Rp 259.000</span> &nbsp;➡️&nbsp; <b style="color:#d40000;font-size:28px">Rp 129.000</b></p>
+  <p style="color:#25D366;font-weight:700;margin-top:5px">✅ HEMAT Rp 130.000 — Hanya Hari Ini!</p>
+
+  <!-- COUNTDOWN -->
+  <div class="countdown-box">
+    <p>⏰ PROMO BERAKHIR DALAM:</p>
+    <div class="timer">
+      <div><span id="h">23</span><small>Jam</small></div>
+      <div><span id="m">59</span><small>Menit</small></div>
+      <div><span id="s">59</span><small>Detik</small></div>
+    </div>
+  </div>
+
+  <!-- STOCK -->
+  <div class="stock">
+    <p>⚠️ STOK TINGGAL SEDIKIT! Buruan sebelum habis!</p>
+    <div class="bar"><div></div></div>
+    <p style="color:#666;font-size:12px;margin-top:8px;font-weight:400">Sisa <b style="color:#d40000">17 unit</b> dari 100 unit</p>
+  </div>
+
+  <h3 style="margin-top:30px;color:#333">Pilih Paket Hemat:</h3>
+  <div class="price-grid">
+    <div class="price-card">
+      <span class="lbl">1 UNIT</span>
+      <h3>Paket Personal</h3>
+      <div class="was">Rp 259.000</div>
+      <div class="now">Rp 129.000</div>
+      <div class="save">HEMAT 50%</div>
+      <button onclick="pilih('1 Unit - Rp 129.000')">PESAN</button>
+    </div>
+    <div class="price-card best">
+      <span class="lbl">⭐ TERLARIS</span>
+      <h3>Paket Couple</h3>
+      <div class="was">Rp 518.000</div>
+      <div class="now">Rp 189.000</div>
+      <div class="save">HEMAT 63%</div>
+      <button onclick="pilih('2 Unit - Rp 189.000')">PESAN</button>
+    </div>
+    <div class="price-card">
+      <span class="lbl">3 UNIT</span>
+      <h3>Paket Keluarga</h3>
+      <div class="was">Rp 777.000</div>
+      <div class="now">Rp 259.000</div>
+      <div class="save">HEMAT 67%</div>
+      <button onclick="pilih('3 Unit - Rp 259.000')">PESAN</button>
+    </div>
+    <div class="price-card">
+      <span class="lbl">4 UNIT</span>
+      <h3>Paket Reseller</h3>
+      <div class="was">Rp 1.036.000</div>
+      <div class="now">Rp 329.000</div>
+      <div class="save">HEMAT 68%</div>
+      <button onclick="pilih('4 Unit - Rp 329.000')">PESAN</button>
+    </div>
+  </div>
+
+  <a href="#order" class="btn-cta">🛒 KLAIM PROMO SEKARANG</a>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="testi">
+  <h2 style="text-align:center;color:#d40000;font-size:24px;margin-bottom:20px">Kata Pembeli <span style="color:#ff5722">Bahagia</span> 😍</h2>
+
+  <div class="testi-card">
+    <div class="stars">⭐⭐⭐⭐⭐</div>
+    <p class="text">"Astaga ini bener-bener works! Pegal di pundak gara-gara WFH langsung hilang dalam 5 menit. Worth it bgt!"</p>
+    <div class="name">— Siti R., Jakarta <span class="verified">✓ Pembeli Terverifikasi</span></div>
+  </div>
+  <div class="testi-card">
+    <div class="stars">⭐⭐⭐⭐⭐</div>
+    <p class="text">"Pesen 2 buat saya & istri. Tiap malem sekarang ritual pijatan, gak perlu ke tempat pijat lagi. Hemat banget!"</p>
+    <div class="name">— Budi S., Surabaya <span class="verified">✓ Pembeli Terverifikasi</span></div>
+  </div>
+  <div class="testi-card">
+    <div class="stars">⭐⭐⭐⭐⭐</div>
+    <p class="text">"Kirimnya cepet, COD pula. Barangnya sesuai foto, getarannya kuat banget. Recommended seller!"</p>
+    <div class="name">— Dewi A., Bandung <span class="verified">✓ Pembeli Terverifikasi</span></div>
+  </div>
+  <div class="testi-card">
+    <div class="stars">⭐⭐⭐⭐⭐</div>
+    <p class="text">"Anak saya yang atlet sekarang pake ini buat recovery setelah latihan. Mantap, gak nyesel beli!"</p>
+    <div class="name">— Pak Hendra, Semarang <span class="verified">✓ Pembeli Terverifikasi</span></div>
+  </div>
+</section>
+
+<!-- GUARANTEE -->
+<section class="section">
+  <div class="guarantee">
+    <div class="ic">🛡️</div>
+    <h3>GARANSI 100% UANG KEMBALI!</h3>
+    <p>Tidak puas dalam 7 hari? Uang Anda kami KEMBALIKAN sepenuhnya. Tanpa pertanyaan. Tanpa ribet.</p>
+    <p style="margin-top:10px;font-weight:700">✓ Garansi Produk 30 Hari ✓ Bayar di Tempat (COD)</p>
+  </div>
+</section>
+
+<!-- ORDER FORM -->
+<section class="section" id="order">
+  <div class="order-form">
+    <h3>📝 ISI DATA PEMESANAN</h3>
+    <p style="text-align:center;color:#25D366;font-size:13px;margin-bottom:10px">✅ Bayar di Tempat (COD) ✅ Gratis Ongkir</p>
+    <input type="text" id="nama" placeholder="Nama Lengkap" required />
+    <input type="tel" id="hp" placeholder="No. HP / WhatsApp Aktif" required />
+    <select id="paket">
+      <option>Pilih Paket</option>
+      <option>1 Unit - Rp 129.000</option>
+      <option selected>2 Unit - Rp 189.000 (TERLARIS)</option>
+      <option>3 Unit - Rp 259.000</option>
+      <option>4 Unit - Rp 329.000</option>
+    </select>
+    <textarea id="alamat" rows="3" placeholder="Alamat Lengkap Pengiriman"></textarea>
+    <button onclick="kirimOrder()">🚚 PESAN SEKARANG - BAYAR DI TEMPAT</button>
+    <p style="text-align:center;font-size:11px;color:#888;margin-top:10px">🔒 Data Anda aman & tidak akan disebarluaskan</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <h2 style="text-align:center;color:#d40000;font-size:24px;margin-bottom:20px">Pertanyaan <span style="color:#ff5722">Sering Ditanya</span></h2>
+  <div class="faq-item"><h4>❓ Apakah bisa COD (Bayar di Tempat)?</h4><p>BISA! Kami support COD di seluruh Indonesia. Bayar setelah barang sampai di rumah Anda.</p></div>
+  <div class="faq-item"><h4>❓ Berapa lama pengiriman?</h4><p>Pengiriman 2-4 hari ke seluruh kota di Indonesia via JNE, J&T, SiCepat.</p></div>
+  <div class="faq-item"><h4>❓ Apakah ada garansi?</h4><p>Ada! Garansi 7 hari uang kembali jika tidak puas + garansi produk 30 hari.</p></div>
+  <div class="faq-item"><h4>❓ Aman untuk semua usia?</h4><p>Aman digunakan oleh dewasa & lansia. Untuk anak-anak gunakan mode kecepatan terendah.</p></div>
+</section>
+
+<!-- FINAL CTA -->
+<section style="background:linear-gradient(135deg,#d40000,#ff5722);color:#fff;padding:40px 20px;text-align:center">
+  <h2 style="font-size:26px;margin-bottom:15px">⏰ JANGAN TUNDA! STOK TERBATAS!</h2>
+  <p style="margin-bottom:20px;font-size:15px">Promo 50% berakhir hari ini. Besok harga kembali normal Rp 259.000!</p>
+  <a href="#order" class="btn-cta" style="background:#fff;color:#d40000">🔥 AMBIL PROMO SEKARANG 🔥</a>
+</section>
+
+<footer>
+  <p>© 2026 Massage Gun Pro Indonesia | Distributor Resmi</p>
+  <p style="margin-top:5px">📞 Customer Service: 0812-XXXX-XXXX | 🚚 Pengiriman Seluruh Indonesia</p>
+</footer>
+
+<!-- FLOATING WA -->
+<a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20Massage%20Gun%20Pro" class="float-wa">💬</a>
+
+<!-- SOCIAL PROOF NOTIF -->
+<div class="notif" id="notif">
+  <div class="avatar" id="nAv">A</div>
+  <div class="info">
+    <b id="nNm">Andi</b>
+    <span id="nTx">baru saja membeli 2 unit</span>
+    <small id="nTm">5 menit lalu • Jakarta</small>
+  </div>
+  <div class="check">✓</div>
+</div>
+
+<script>
+// COUNTDOWN
+let h=23,m=59,s=59;
+setInterval(()=>{
+  s--;if(s<0){s=59;m--}if(m<0){m=59;h--}if(h<0){h=23;m=59;s=59}
+  document.getElementById('h').textContent=String(h).padStart(2,'0');
+  document.getElementById('m').textContent=String(m).padStart(2,'0');
+  document.getElementById('s').textContent=String(s).padStart(2,'0');
+},1000);
+
+// SOCIAL PROOF NOTIF
+const names=[
+  {n:'Andi P.',k:'Jakarta',p:'A'},{n:'Siti R.',k:'Surabaya',p:'S'},
+  {n:'Budi H.',k:'Bandung',p:'B'},{n:'Dewi K.',k:'Medan',p:'D'},
+  {n:'Rina M.',k:'Semarang',p:'R'},{n:'Fajar L.',k:'Makassar',p:'F'},
+  {n:'Wulan A.',k:'Yogyakarta',p:'W'},{n:'Pak Joko',k:'Solo',p:'J'},
+  {n:'Bu Tini',k:'Malang',p:'T'},{n:'Heri S.',k:'Denpasar',p:'H'},
+  {n:'Lina W.',k:'Palembang',p:'L'},{n:'Eko P.',k:'Bekasi',p:'E'}
+];
+const acts=['membeli 1 unit','membeli 2 unit (Paket Couple)','membeli 3 unit (Paket Keluarga)','membeli 4 unit (Paket Reseller)','baru saja checkout'];
+const times=['baru saja','1 menit lalu','2 menit lalu','5 menit lalu','7 menit lalu','10 menit lalu'];
+let i=0;
+function showNotif(){
+  const p=names[Math.floor(Math.random()*names.length)];
+  const a=acts[Math.floor(Math.random()*acts.length)];
+  const t=times[Math.floor(Math.random()*times.length)];
+  document.getElementById('nNm').textContent=p.n;
+  document.getElementById('nAv').textContent=p.p;
+  document.getElementById('nTx').textContent=a;
+  document.getElementById('nTm').textContent=t+' • '+p.k;
+  const el=document.getElementById('notif');
+  el.classList.add('show');
+  setTimeout(()=>el.classList.remove('show'),4500);
+}
+setTimeout(showNotif,2000);
+setInterval(showNotif,8000);
+
+// PILIH PAKET
+function pilih(p){
+  document.getElementById('paket').value=p.includes('1 Unit')?'1 Unit - Rp 129.000':p.includes('2 Unit')?'2 Unit - Rp 189.000 (TERLARIS)':p.includes('3 Unit')?'3 Unit - Rp 259.000':'4 Unit - Rp 329.000';
+  document.getElementById('order').scrollIntoView({behavior:'smooth'});
+}
+
+// ORDER
+function kirimOrder(){
+  const n=document.getElementById('nama').value;
+  const h=document.getElementById('hp').value;
+  const p=document.getElementById('paket').value;
+  const a=document.getElementById('alamat').value;
+  if(!n||!h||!a||p==='Pilih Paket'){alert('Mohon lengkapi semua data ya!');return}
+  const txt=`Halo Admin, saya mau pesan Massage Gun Pro:%0A%0ANama: ${n}%0AHP: ${h}%0APaket: ${p}%0AAlamat: ${a}%0A%0AMohon proses ya, terima kasih!`;
+  window.open(`https://wa.me/6281234567890?text=${txt}`,'_blank');
+}
+</script>
+</body>
+</html>
